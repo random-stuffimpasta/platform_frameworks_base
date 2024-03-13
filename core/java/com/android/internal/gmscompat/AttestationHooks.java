@@ -57,10 +57,12 @@ public final class AttestationHooks {
 
     private static void spoofBuildGms() {
         // Alter model name and fingerprint to avoid hardware attestation enforcement
-        setBuildField("FINGERPRINT", "google/bullhead/bullhead:8.0.0/OPR6.170623.013/4283548:user/release-keys");
-        setBuildField("DEVICE", "bullhead");
-        setBuildField("PRODUCT", "bullhead");
-        setBuildField("MODEL", "Nexus 5X");
+        setBuildField("FINGERPRINT", "motorola/griffin_retcn/griffin:6.0.1/MCC24.246-37/42:user/release-keys");
+        setBuildField("DEVICE", "griffin");
+        setBuildField("PRODUCT", "griffin_retcn");
+        setBuildField("MANUFACTURER", "motorola");
+        setBuildField("BRAND", "motorola");
+        setBuildField("MODEL", "XT1650-05");
     }
 
     public static void initApplicationBeforeOnCreate(Context context) {
